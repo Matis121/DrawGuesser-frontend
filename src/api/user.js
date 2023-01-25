@@ -7,9 +7,15 @@ export async function registerUser(user) {
 }
 
 export async function postLogin(user) {
-  let response = await axios.post("https://drawguesser-backend.onrender.com/user/login", user);
-  let data = response.data;
-  return data;
+  console.log("postLogin funkcja");
+  try{
+    let response = await axios.post("https://drawguesser-backend.onrender.com/user/login", user);
+    console.log(response);
+    let data = response.data;
+    return data;
+  } catch(error){
+    console.log(error);
+  }
 }
 
 export async function changePassword(payload) {

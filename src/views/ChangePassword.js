@@ -73,7 +73,7 @@ export default function ChangePassword() {
         <TextField
           label="Enter New Password"
           variant="outlined"
-          inputa
+          inputa="true"
           value={newPassword}
           onChange={(e) => setNewPassword(e.target.value)}
           autoComplete="off"

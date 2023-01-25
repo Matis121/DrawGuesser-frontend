@@ -13,6 +13,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   async function handleLogin() {
+    console.log("handle login kurwa")
     const payload = {
       username,
       password,
@@ -34,7 +35,7 @@ export default function Login() {
         });
       notify();
     }
-
+    console.log("po funkcji postLogin");
     setUsername("");
     setPassword("");
   }
@@ -75,7 +76,7 @@ export default function Login() {
           label="Password"
           type="password"
           variant="outlined"
-          inputa
+          inputa="true"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete="off"

@@ -69,7 +69,7 @@ export default function SignUp() {
           label="Password"
           type="password"
           variant="outlined"
-          inputa
+          inputa="true"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete="off"
